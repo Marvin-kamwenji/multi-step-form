@@ -1,38 +1,50 @@
+:root {
+ /* Colors */
+
+ /* Primary */
+
+--marine-blue: hsl(213, 96%, 18%);
+--purplish-blue: hsl(243, 100%, 62%);
+--pastel-blue: hsl(228, 100%, 84%);
+--light-blue: hsl(206, 94%, 87%);
+--strawberry-red: hsl(354, 84%, 57%);
+
+ /* Neutral */
+
+--cool-gray: hsl(231, 11%, 63%);
+--light-gray: hsl(229, 24%, 87%);
+--magnolia: hsl(217, 100%, 97%);
+--alabaster: hsl(231, 100%, 99%);
+--white: hsl(0, 0%, 100%);
+
+/* Typography */
+
+ /* Body Copy */
+
+--font-size: 16px;
+
+ /* Font */
+
+--font-family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu);
+--normal-weight: 400;
+--medium-weight: 500;
+--bold-weight: 700;
+}
+
+
 .App {
-  text-align: center;
+  background-image: url(../src/assets/images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--magnolia);
+  height: 50vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 376px) and (max-width: 1440px) {
+  .App {
+    background-image: url(../src/assets/images/bg-sidebar-desktop.svg);
+    height: 92vh;
+    background-repeat: no-repeat;
+    margin: 20px 20px 20px 20px;
+    background-color: var(--magnolia);
   }
 }
